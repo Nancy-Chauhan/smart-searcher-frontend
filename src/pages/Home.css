@@ -2,3 +2,16 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+.welcome-card ion-card-content {
+  padding-top: 0;
+}
+
+.topbar-grid {
+  --ion-grid-padding: 0px;
+  --ion-grid-column-padding: 0px;
+}
+
+.title-logo {
+  height: 3rem;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, IonSplitPane } from '@ionic/react';
+import { IonApp, IonRouterOutlet, IonSplitPane, setupConfig } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { AppPage } from './declarations';
 
@@ -41,7 +41,12 @@ const appPages: AppPage[] = [
   }
 ];
 
-const App: React.FC = () => (
+const App: React.FC = () => {
+  setupConfig({
+    mode: 'ios'
+  })
+
+  return (
   <IonApp>
     <IonReactRouter>
       <IonSplitPane contentId="main">
@@ -53,7 +58,7 @@ const App: React.FC = () => (
         </IonRouterOutlet>
       </IonSplitPane>
     </IonReactRouter>
-  </IonApp>
-);
+  </IonApp>)
+};
 
 export default App;

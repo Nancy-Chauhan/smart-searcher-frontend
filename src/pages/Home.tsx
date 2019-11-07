@@ -8,10 +8,6 @@ import {
   IonContent,
   IonHeader,
   IonIcon,
-  IonItem,
-  IonLabel,
-  IonList,
-  IonListHeader,
   IonMenuButton,
   IonPage,
   IonSearchbar,
@@ -22,7 +18,7 @@ import {
   IonGrid,
   IonCol
 } from '@ionic/react';
-import { book, build, colorFill, grid, camera } from 'ionicons/icons';
+import { camera } from 'ionicons/icons';
 import React from 'react';
 import './Home.css';
 

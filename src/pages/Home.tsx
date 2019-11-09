@@ -16,11 +16,23 @@ import {
   IonButton,
   IonRow,
   IonGrid,
-  IonCol
+  IonCol,
+  IonList, 
+  IonItem, 
+  IonThumbnail, 
+  IonImg, 
+  IonLabel
 } from '@ionic/react';
 import { camera } from 'ionicons/icons';
 import React from 'react';
 import './Home.css';
+
+type Item = {
+  src: string;
+  text: string;
+};
+
+const items: Item[] = [{ src: 'http://placekitten.com/g/200/300', text: 'a picture of a cat' }];
 
 const HomePage: React.FC = () => {
   return (
@@ -49,7 +61,7 @@ const HomePage: React.FC = () => {
           </IonRow>
         </IonGrid>
         <IonCard className="welcome-card">
-          <img src="/assets/shapes.svg" alt="" />
+          <img src="/assets/cover.jpeg" alt="" />
           <IonCardHeader>
             <IonCardSubtitle>Looking for the perfect outfit</IonCardSubtitle>
             <IonCardTitle>Your search ends now!</IonCardTitle>

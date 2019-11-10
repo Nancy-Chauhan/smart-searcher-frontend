@@ -89,7 +89,7 @@ class HomePage extends React.Component {
             </IonRow>
           </IonGrid>
           <IonCard className="welcome-card">
-            <img src="/assets/shapes.svg" alt="" />
+            <img src="/assets/cover.jpeg" alt="" />
             <IonCardHeader>
               <IonCardSubtitle>Looking for the perfect outfit</IonCardSubtitle>
               <IonCardTitle>Your search ends now!</IonCardTitle>

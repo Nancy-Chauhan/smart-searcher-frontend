@@ -1,5 +1,11 @@
 {
   "name": "Smart Searcher",
   "integrations": {},
-  "type": "react"
+  "type": "react",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://localhost:5000/"
+    }
+  ]
 }

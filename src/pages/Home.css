@@ -16,3 +16,16 @@
   height: 2.5rem;
   padding: 0.25rem;
 }
+
+.hiddenUpload {
+  display: none;
+}
+
+.product-grid {
+  --ion-grid-padding: 0px;
+  --ion-grid-column-padding: 0px;
+}
+
+.product-title {
+  font-size: 1.25rem
+}
